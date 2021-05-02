@@ -479,10 +479,10 @@ def gameScreen(playerNum):
 
 
     player = Entity(playerImg, (2, 2), (screenSize[0] / 2 - playerImg.get_size()[0] / 2,
-                                        screenSize[1] / 2 - playerImg.get_size()[1] / 2), (0, 0), 1, 1, [])
+                                        screenSize[1] / 2 - playerImg.get_size()[1] / 2), (0, 0), 6, 6, [])
 
     enemy = Entity(enemyImg, enemyImg.get_size(), (screenSize[0] / 2 - enemyImg.get_size()[0] / 2,
-                                                   screenSize[1] / 4 - enemyImg.get_size()[1] / 2), (0, 0), 1, 1, [])
+                                                   screenSize[1] / 4 - enemyImg.get_size()[1] / 2), (0, 0), 300, 300, [])
 
     playerHB = pygame.Rect((int(player.img.get_size()[0] / 2 - player.hitboxSize[0] / 2),
                             int(player.img.get_size()[1] / 2 - player.hitboxSize[1] / 2)), player.hitboxSize)
