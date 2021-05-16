@@ -817,7 +817,7 @@ def main(num):
         if retry == 1:
             main(playerNum)
         else:
-            main()
+            main(0)
     else:
         gameWinScreen()
         main(0)
